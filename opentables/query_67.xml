@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+  <meta>
+    <author>You</author>
+    <documentationURL>None</documentationURL>
+    <description>uses the key-file.</description>
+    <sampleQuery>SELECT file FROM {table} WHERE key="Beyonc"</sampleQuery>
+  </meta>
+
+  <bindings>
+    <select itemPath="root.Query" produces="XML">
+      <urls>
+        <url>https://raw.github.com/yesboyhongtai/yql-data/master/query_eta_67.xml</url>
+             
+      </urls>
+      </select>
+  </bindings>
+</table>
