@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" type="text/css" href="/static/FormMojit/assets/index.css"/>
+
+<div id="{{mojit_view_id}}">
+<div id="form_container">
+    <form class="yui3-overlay" id="theme_form" action="#" method="get">
+        <fieldset>
+            <h3>Update Theme</h3>
+            <label for="word">Search Word:</label>
+            <input type="text" size="12" id="searchWord">
+
+            <label for="start">Start Date:</label>
+            <input type="text" size="12" id="startDate">
+
+            <label for="end">End Date:</label>
+            <input type="text" size="12" id="endDate"> <br><br>
+	    <input type="Button" id="btn" value="render">	    
+        </fieldset>
+    </form>
+</div>
+        <div id="startOverlay" class="yui3-overlay-loading">
+            <div class="yui3-widget-bd" id="startCalendar"></div>
+        </div>
+        <div id="endOverlay" class="yui3-overlay-loading">
+            <div class="yui3-widget-bd" id="endCalendar"></div>
+        </div>
+
+</div>

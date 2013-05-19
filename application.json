@@ -1,0 +1,60 @@
+[
+    {
+        "settings": [ "master" ],
+        "yui": {
+          "config": {
+            "groups": {
+              "d3lib": {
+                "base": "http://d3js.org/",
+		   "modules":{
+			"d3":{
+				"path":"d3.v3.min.js"
+			},
+			"topojson":{
+				"path":"topojson.v1.min.js"
+			},
+			"queue":{
+				"path":"queue.v1.min.js"
+			}
+		}
+              }
+            }
+          }
+        },
+	
+        "specs": {
+		"device":{
+			"type":"HTMLFrameMojit",
+			"config":{
+				"deploy": true,
+				"child":{
+					"type":"FormMojit",
+				        "config":{
+					   "children":{
+						"yql":{
+						   "type": "yqlMojit"
+						}
+					   }
+					}
+				}
+			}
+		}
+	},
+	"assets": {
+	   "top":{
+		"css":[
+		 "/assets/index.css"
+		]
+		}
+	}
+    },
+
+    {
+	   "settings": ["device:android"],
+	   "selector": "android"
+    },
+    {
+	    "settings": ["device:iphone"],
+	    "selector": "iphone"
+    }
+]

@@ -1,0 +1,63 @@
+.yui3-overlay-content {
+    background-color: #ECEFFB;  
+    border: 1px solid #9EA8C6;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+} 
+.yui3-overlay-content .yui3-widget-hd {
+    background-color: #B6BFDA;  
+    color: #30418C;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 0.2em 0.5em 0.3em;
+    border-radius: 2px 2px 0 0;
+}
+
+.yui3-overlay-content .yui3-widget-bd {
+    padding: 0.4em 0.6em 0.5em;
+}
+
+.yui3-overlay-content .yui3-widget-ft {
+    background-color:#DFE3F5;
+    padding: 0.4em 0.6em 0.5em;
+    border-radius: 0 0 2px 2px;
+}
+
+.yui3-overlay form {
+    background: #f2fbff repeat-x scroll 0 0;
+    border: 2px solid #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+.yui3-overlay fieldset {
+    border: 1px solid #cde;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 20px;
+}
+.yui3-overlay h3 {
+    border-bottom: 2px solid #fff;
+    color: #479;
+    background: transparent;
+    margin: 0;
+    font-size: 175%;
+}
+.yui3-overlay label {
+    display: block;
+    margin: 1.3em 0 0.5ex;
+    font-weight: bold;
+    color: #003;
+}
+.yui3-overlay p {
+    margin: 2em 0 0;
+}
+/* override the move cursor for the Slider */
+.yui3-overlay .yui3-slider:hover {
+    cursor: default;
+}

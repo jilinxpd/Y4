@@ -1,0 +1,100 @@
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.10.1/build/cssgrids/cssgrids-min.css">
+
+
+<style>
+.states {
+  fill: #ccc;
+  fill-opacity: .8;;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+
+.symbol {
+ fill: #990099;
+ fill-opacity: .8;
+ stroke: #fff;
+}
+
+.locationname {
+font-size: 18px;
+fill: #500000;
+}
+
+
+.q0 { fill:rgb(247,251,255); fill-opacity: 0.8; }
+.q1 { fill:rgb(222,235,247); fill-opacity:  0.8; }
+.q2 { fill:rgb(198,219,239); fill-opacity:  0.8; }
+.q3 { fill:rgb(158,202,225); fill-opacity:  0.8; }
+.q4 { fill:rgb(107,174,214); fill-opacity:  0.8; }
+.q5 { fill:rgb(66,146,198); fill-opacity:  0.8; }
+.q6 { fill:rgb(33,113,181); fill-opacity: 0.8; }
+.q7 { fill:rgb(8,81,156); fill-opacity:  0.8; }
+.q8 { fill:rgb(8,48,107); fill-opacity:  0.8; }
+.q_white { fill:#FFFFFF;fill-opacity: .0;}
+
+body{
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-right: auto;
+   margin-left: auto;
+   width: 960px;
+}
+
+.blue{
+    background-color:#1B7AE0;
+    color:white;
+    height: 30px;
+    vertical-align: middle;
+    width: 120px;
+}
+
+.pupple{
+    background-color:#990099;
+    color:white;
+    height: 30px;
+    vertical-align: middle;
+    width: 120px;
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="/static/FormMojit/assets/index.css"/>
+<link rel="stylesheet" href="http://yui.yahooapis.com/3.10.1/build/cssbutton/cssbutton.css">
+
+<body>
+<div id="{{mojit_view_id}}">
+
+<div id="demo" class="yui3-skin-sam">
+
+<h3>Regional Concern  </h3>
+  <label for="searchWord">Search Word:</label>
+  <input id="searchWord" type="text" size="12">
+
+            <label for="start">Start Date:</label>
+            <input type="text" size="12" id="startDate">
+
+            <label for="end">End Date:</label>
+            <input type="text" size="12" id="endDate"> 
+
+            <label for="style">Style:</label>
+
+
+	    <input type="Button" id="btn" value="Render">
+<br><br>	
+<button class='blue'>gradient style</button>
+<button class='pupple'>bubble style</button>
+
+
+        <div id="startOverlay" class="yui3-overlay-loading">
+            <div class="yui3-widget-bd" id="startCalendar"></div>
+        </div>
+        <div id="endOverlay" class="yui3-overlay-loading">
+            <div class="yui3-widget-bd" id="endCalendar"></div>
+        </div>
+{{{yql}}}
+</div>
+
+
+</body>
